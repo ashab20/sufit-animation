@@ -1,0 +1,58 @@
+.navbar_fixed{background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 4000;
+    transition: background 1s ease;
+
+}
+
+.navbar-nav .nav-item a.nav-link{
+    color: #141313;
+    background: unset;
+}
+
+
+
+.site-buttons div button a{
+    color: rgb(255, 255, 255) !important;
+}
+
+.site-buttons a:hover{
+    color: var(--gradient-color);
+}
+.about .about-title .paragrap .para{
+    
+    color: var(--text-color);
+}
+.cursor{
+    border: 2px solid black;
+}
+.cloud{z-index:-1;}
+.navbar-toggler{
+    background: unset;
+    border-radius: 5px;
+}
+
+.site-main > .service-area .services p{
+    color: var(--text-color);
+}
+
+.site-main, footer, .services,body{
+    background:unset;
+    color: unset;
+    animation: all 3s ease;
+    z-index: -1;
+}
+
+.social a, .btn-group button, .btn-group button a, .services p,a,.about-title .btn a{
+    color: unset;
+}
+
+.sun{
+    display:block;
+}
+.moon{opacity: 0;}
+.clr-moon{display:block;}
+.clr-sun{display:none;}
+
+
+.header-area .main-menu .navbar-nav .active a,.header-area .main-menu .navbar-nav .active a:hover{ color: rgb(72, 195, 42) }

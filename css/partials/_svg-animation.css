@@ -1,0 +1,480 @@
+/* Animation
+
+    Design by Ashab Uddin
+    Power By sufit
+*/
+
+.main-menu .navbar .navbar-brand{
+    animation: brand 2s ease-in-out  3;
+    animation-delay: 20s ;
+    animation-duration: 5s;
+    
+}
+
+@keyframes brand{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+
+    }
+}
+
+
+
+.site-title{
+    width: 40% !important;
+}
+.site-title::before{
+    content: "";
+    position: absolute;
+    top: -2px;left: -2px;
+    height: 0;
+    width: 0;
+    background: transparent;
+    border: 5px solid transparent;
+    animation: bar 2s linear backwards;
+    animation-delay: 2s;    
+}
+@keyframes bar{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color:transparent ;
+        border-right-color:rgb(17, 202, 41)  ;
+        border-bottom-color:transparent ;
+        border-left-color:transparent ;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color:transparent;
+        border-right-color:rgb(17, 202, 41);
+        border-bottom-color:transparent;
+        border-left-color:transparent ;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color:transparent;
+        border-right-color:rgb(17, 202, 41)  ;
+        border-bottom-color:transparent ;
+        border-left-color:transparent ;
+    }
+}
+
+.site-title::after{
+    content: "";
+    position: absolute;
+    top: -2px;left: -2px;
+    height: 0;
+    width: 0;
+    background: transparent;
+    border: 5px solid transparent;
+    animation: barr 2s linear backwards;
+    animation-delay: 2s;    
+}
+@keyframes barr{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color:transparent ;
+        border-right-color:transparent ;
+        border-bottom-color:transparent ;
+        border-left-color:rgb(17, 202, 41) ;
+    }
+    50%{
+        width: 0;
+        height: 100%;
+        border-top-color:transparent;
+        border-right-color:transparent;
+        border-bottom-color:rgb(17, 202, 41);
+        border-left-color:transparent ;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color:transparent;
+        border-right-color:transparent  ;
+        border-bottom-color:rgb(17, 202, 41);
+        border-left-color:transparent;
+    }
+}
+
+
+/* Sign */
+.site-title h1 span{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    font-size: 3.5rem;
+    font-family: var(--roboto);
+    font-weight: bold;
+    animation: sign 4s linear ;
+}
+.site-title h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+
+.site-title h1 span:nth-child(2){
+    animation-delay: 0.25s;
+}
+
+.site-title h1 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+.site-title h1 span:nth-child(4){
+    animation-delay: 0.75s;
+}
+
+.site-title h1 span:nth-child(6){
+    
+    animation-delay: 1s;
+}
+
+.site-title h1 span:nth-child(7){
+    animation-delay: 1.25s;
+}
+
+.site-title h1 span:nth-child(8){
+    animation-delay: 1.5s;
+}
+
+.site-title h1 span:nth-child(9){
+    animation-delay: 1.75s;
+}
+
+.site-title h1 span:nth-child(10){
+    animation-delay: 2s;
+}
+
+
+ @keyframes sign{
+     0%,100%{
+         color: rgb(12, 1, 1),
+                black,
+                black,
+                black,
+                black,
+                black,
+                black,
+                black,
+                black;
+         /* filter: blur(2px); */
+         /* text-shadow:    0 0 10px #00b3ff,
+                        0 0 20px #00b3ff,
+                        0 0 40px #00b3ff,
+                        0 0 80px #00b3ff,
+                        0 0 120px #00b3ff,
+                        0 0 200px #00b3ff,
+                        0 0 300px #00b3ff,
+                        0 0 400px #00b3ff,
+                        0 0 500px #00b3ff; */
+     }95%{
+        /* color: rgba(0, 0, 0, 0.315); */
+        color: transparent;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+ }
+
+
+
+
+/* === SVG === */
+
+#bird{
+    animation: bird 1s ease infinite ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes bird{
+    0%{
+        
+        transform: rotateX(30deg);
+    }100%{
+        
+        transform: rotateX(60deg);
+
+    }
+}
+
+.bird:nth-child(1){
+    
+    transform: translateY(80%);
+    
+}
+
+.bird:nth-child(2){
+    transform: translateX(80%);
+}
+.bird:nth-child(3){
+    transform: translateY(80%);
+}
+
+.cloud{
+    
+    animation: cloud 13s  infinite linear;
+    -o-animation-delay: 2s;
+}
+/* cloud */
+@keyframes cloud{
+    from{
+        left: 30%;
+    
+        
+    }to{        
+        left: 10%;
+        
+    }
+}
+
+
+/* sun */
+
+.sun{
+    animation: sun 10s ease ;
+    animation-delay: 5s;
+}
+@keyframes sun {
+    40%{
+        width: 80%;
+        top: 13%;
+        opacity:.8;
+    }
+    100%{
+        top: 20%;
+        opacity: 0;
+    }
+}
+
+.moon{
+    animation: moon 9s ease ;
+    animation-delay: 6s;
+}
+@keyframes moon {
+    20%{
+        width: 80%;
+        left: 0;
+        right: 0;
+        
+        opacity:.5;
+    }
+    50%{
+        opacity: .7;
+        left: 0;
+        right: 0;
+    }
+    100%{
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+}
+
+
+
+.site-main,footer,.services,body,.navbar_fixed a.nav-link{
+    animation: main 11s ease ;
+    animation-delay: 4s;
+
+}
+@keyframes main{
+    10%{
+        background: unset;
+        color: unset;
+    
+    }
+    
+    80%{        
+        z-index: -2;
+    }
+    100%{
+        background: rgb(36, 34, 34);
+        color: whitesmoke;
+        
+
+    }
+}
+/* .navbar-nav .nav-item .nav-link */
+.social a,.btn-group button,.btn-group button a,.services p,{
+    animation: text 11s ease ;
+    animation-delay: 4s;
+
+}
+@keyframes text{
+    10%{
+        
+        color: unset;
+    
+    }
+    
+    50%{        
+        
+    }
+    100%{
+        color: whitesmoke;
+        
+        
+
+    }
+}
+#redpin{
+    stroke: #fff;
+    /* fill: red; */
+    stroke-width: 5;
+    animation: animate 4s ease infinite;
+    animation-delay: 1s;
+}
+/* svg animation */
+
+
+
+
+@keyframes animate{
+    0%{
+        stroke: #fff;
+
+    }
+    100%{
+        stroke: red;
+    }
+}
+
+
+#shadow{
+    animation: shadow 6s ease infinite ;
+    animation-delay: 2s;
+}
+
+@keyframes shadow{
+    from{
+        transform:scaleX(1deg);
+    }to{
+        transform: scaleY(0);
+    }
+}
+#black-leaf{
+    animation: leaf 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes leaf{
+    from{
+        transform:rotateZ(-20deg);
+    }to{
+        transform:rotateZ(-10deg);
+    }
+}
+#green-leaf{
+    animation: leaf-g 3s ease infinite ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes leaf-g{
+    0%{
+        
+        transform: rotateX(30deg);
+    }100%{
+        
+        transform: rotateX(0deg);
+
+    }
+}
+
+/* html svg */
+
+#leaf{
+    animation: green-leaf 8s  linear infinite;
+    animation-delay: 3s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes green-leaf{
+    0%{
+        
+        transform: scaleY(.5);
+        
+        
+    }
+    100%{
+        transform: scaleY(1);
+
+    }
+}
+#girl-js{
+    animation: girl-js 11s infinite linear;
+    
+    transform-box: fill-box;
+}
+
+@keyframes girl-js{
+    0%{
+        
+        transform: rotateY(-50deg);
+        
+        
+    }
+    50%{
+        transform: rotateY(30);
+        
+    }
+    100%{
+        transform: scaleX(0deg);
+
+    }
+}
+
+
+.arrow {
+    animation: arrow 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes arrow{
+    0%{
+        
+        bottom: 1%;
+        
+        
+    }
+
+    100%{
+        bottom: 3%;
+
+
+    }
+}
+#play_now{
+    cursor: pointer !important;
+    z-index: 2000;
+}
+.play-text{
+    position: absolute;
+    top: 50%;right:20% ;
+    color: var(--text-color);
+    display: none;
+    
+    padding: 2px;
+    font-size: 20px;
+}
+
+
+
+#html-box{
+    cursor: pointer;
+    z-index: 1000;
+}
+#css-box{
+    cursor: pointer;
+    z-index: 1000;
+}
+#js-box{
+    cursor: pointer;
+    z-index: 1000;
+}
